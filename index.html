@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>callBack Hell</title>
     <style>
         * {
             padding: none;
@@ -21,6 +21,7 @@
         }
  
         body {
+            margin: 10px;
             border: 2px solid black;
             display: flex;
             justify-content: center;
@@ -30,6 +31,7 @@
         }
  
         .container {
+            text-align: center;
             background: radial-gradient(circle,rgb(204, 204, 58),rgb(65, 219, 65));
             overflow: hidden;
             display: flex;
@@ -114,8 +116,8 @@
             }, 1000)
         }, 1000)
     }
-    const animate = (num) => {
-        num.classList.add("animate");
+    const animate = (number) => {
+        number.classList.add("animate");
     }
  
     animateAll(animate);
